@@ -6,7 +6,7 @@ It was created for a client's one-off project, but clear that the process was to
 
 Example command:
 ```
-time php md.php --file ./data/dataset1/data.csv  --name "four" --template "./templates/md.html" --s3bucket bucket-name --awscreds config/aws.json --upload
+time php hd.php --file ./data/dataset1/data.csv  --name "four" --template "./templates/hl.html" --s3bucket bucket-name --awscreds config/aws.json --upload
 ```
 
 
