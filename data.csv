@@ -1,0 +1,7 @@
+hotelid,hotelname,checkin,rate,currency,roomtypeandrateplan,occupancy
+1,Nice Hotel 1,1st April 2015,40.00,£,Deluxe Double,2
+1,Nice Hotel 1,1st April 2015,60.00,£,Super Deluxe Double,2
+1,Nice Hotel 1,1st April 2015,20.00,£,Deluxe Single,1
+2,Nice Hotel 2,1st April 2015,40.00,£,Deluxe Double,2
+2,Nice Hotel 2,1st April 2015,60.00,£,Super Deluxe Double,2
+2,Nice Hotel 2,1st April 2015,20.00,£,Deluxe Single,1

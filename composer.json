@@ -1,0 +1,21 @@
+{
+    "name": "creativecherry/hotellandingpages",
+    "require": {
+        "nategood/commando": "*",
+        "aws/aws-sdk-php": "*",
+        "twig/twig": "*"
+    },
+    "license": "Copyright Creative Cherry 2014",
+    "authors": [
+        {
+            "name": "James Browne",
+            "email": "james@creativecherry.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CreativeCherry\\HotelLandingPages\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

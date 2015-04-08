@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>Hotel Page</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/bucket-name/local.css">
+    <style>
+        .table-nowrap {
+            white-space: nowrap
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <img class="navbar-logo" src="http://s3.amazonaws.com/bucket-name/logo.png" alt="Logo"/>
+        </div>
+    </div>
+</div>
+<div class="main" role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <header>
+                    <h1 class="page-header">Page Heading</h1>
+                </header>
+                <p class="lead">Introductory text</p>
+            </div>
+            <div class="col-md-4 hoteldetails">
+                <h3>{{ hotel.hotelname }}</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <section>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Check-in</th>
+                                <th>Hotel Rate</th>
+                                <th>Currency</th>
+                                <th>Room Type and Rate Plan</th>
+                                <th>Occupancy</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for room in rooms %}
+                                <tr>
+                                    <td class="table-nowrap">{{ room.checkin }}</td>
+                                    <td>{{ room.rate }}</td>
+                                    <td>{{ room.currency }}</td>
+                                    <td>{{ room.roomtypeandrateplan }}</td>
+                                    <td>{{ room.occupancy }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="well">
+                    <section>
+                        <header>
+                            <h3>Action Required:</h3>
+                        </header>
+                        <ol>
+                            <li><strong>Action point one:</strong> Action description</li>
+                            <li><strong>Action point two:</strong> Action description</li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pagefooter">
+</div>
+</body>
+</html>
