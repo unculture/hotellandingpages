@@ -3,10 +3,9 @@ A command line application to generate landing pages and automatically upload th
 
 It was created for a client's one-off project, but clear that the process was to be run multiple times over a period of weeks. I took the opportunity to save time by automating the steps of the process.
 
-
 Example command:
 ```
-time php hd.php --file ./data/dataset1/data.csv  --name "four" --template "./templates/hl.html" --s3bucket bucket-name --awscreds config/aws.json --upload
+time php hl.php --file ./data/dataset1/data.csv  --name test1 --template templates/hl.html --s3bucket bucket-name --awscreds config/aws.json --upload
 ```
 
 
